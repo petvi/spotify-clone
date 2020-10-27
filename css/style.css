@@ -12,6 +12,7 @@ body {
 #sidebar {
   height: 100vh !important;
   background-color: #050505 !important;
+  flex: 0 0 230px;
 }
 
 #sidebar > .bottom-sidebar > .btn {
@@ -48,10 +49,19 @@ body {
   color: #fff;
 }
 
+#sidebar
+  > .top-sidebar
+  > .navigation
+  > .navigation-item.active
+  > svg {
+  margin-left: -4px;
+}
+
 .btn-success {
   font-size: 1rem;
   padding: 0.5rem 2.5rem;
   border-radius: 500px;
+  background-color: #1db954;
 }
 
 .title {
@@ -72,4 +82,10 @@ body {
 
 .track {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 690px) {
+  #sidebar {
+    display: none !important;
+  }
 }
